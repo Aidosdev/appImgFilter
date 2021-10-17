@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #b881dd;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 8% 0;
+}
+
+section .my-app {
+  width: 70%;
+  margin: 0 auto;
+}
+
+section .my-app .flex_row .flex_box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+section .my-app .flex_row .flex_box .filter-left {
+  width: 68%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+section .my-app .flex_row .flex_box .filter-left .img-filter {
+  margin-bottom: 10px;
+}
+
+section .my-app .flex_row .flex_box .filter-left .img-filter img {
+  border-radius: 10px;
+  max-height: 500px;
+}
+
+section .my-app .flex_row .flex_box .filter-left .url-value {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 5px;
+}
+
+section .my-app .flex_row .flex_box .filter-right {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+section .my-app .flex_row .flex_box .filter-right .filter-params .filter-inputs + .filter-inputs {
+  margin-top: 20px;
+}
+
+section .my-app .flex_row .flex_box .filter-right .filter-params .filter-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+section .my-app .flex_row .flex_box .filter-right .filter-params .filter-inputs label {
+  margin-bottom: 5px;
+}
+
+section .my-app .flex_row .flex_box .filter-right .btn {
+  margin-top: 20px;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e1e430;
+  cursor: pointer;
+  outline: none;
+}
+
+section .my-app .flex_row .flex_box .filter-right .btn:disabled {
+  background-color: #8f8f8a;
+}
+/*# sourceMappingURL=style.css.map */

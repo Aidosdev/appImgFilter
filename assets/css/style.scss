@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(184, 129, 221);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 8% 0;
+    .my-app {
+        width: 70%;
+        margin: 0 auto;
+        .flex_row {
+            .flex_box {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                .filter-left {
+                    width: 68%;
+                    padding: 10px;
+                    border: 1px solid #000;
+                    border-radius: 15px;
+                    .img-filter {
+                        margin-bottom: 10px;
+                        img {
+                            border-radius: 10px;
+                            max-height: 500px;
+                        }
+                    }
+                    .url-value {
+                        width: 100%;
+                        padding: 5px;
+                        border: none;
+                        border-radius: 5px;
+                        outline: none;
+                        margin-top: 5px;
+                    }
+                }
+                .filter-right {
+                    width: 30%;
+                    padding: 10px;
+                    border: 1px solid #000;
+                    border-radius: 15px;
+                    .filter-params {
+                        .filter-inputs + .filter-inputs {
+                            margin-top: 20px;
+                        }
+                        .filter-inputs {
+                            display: flex;
+                            flex-direction: column;
+                            label {
+                                margin-bottom: 5px;
+                            }
+                        }
+                    }
+                    .btn {
+                        margin-top: 20px;
+                        width: 100px;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 10px;
+                        background-color: rgb(225, 228, 48);
+                        cursor: pointer;
+                        outline: none;
+                        &:disabled {
+                            background-color:rgb(143, 143, 138);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
